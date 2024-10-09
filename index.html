@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharva Kalamkar Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home" class="tablink" onclick="openTab('home')">Home</a></li>
+            <li><a href="#research" class="tablink" onclick="openTab('research')">Research</a></li>
+            <li><a href="#software" class="tablink" onclick="openTab('software')">Software</a></li>
+            <li><a href="#tutoring" class="tablink" onclick="openTab('tutoring')">Tutoring</a></li>
+            <li><a href="#contact" class="tablink" onclick="openTab('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="home" class="tab">
+        <h2>Home</h2>
+        <p>
+            I obtained my Master’s in Computational Science from The University of Texas at Austin, 
+            specializing in high-performance computing, computational fluid dynamics, and numerical analysis. 
+        </p>
+    </div>
+
+    <div id="research" class="tab">
+        <h2>Research</h2>
+        <p>My research focuses on computational fluid dynamics, Bayesian inverse problems, and imaging science.</p>
+        <img src="assets/research_image.png" alt="Research Image" width="300">
+    </div>
+
+    <div id="software" class="tab">
+        <h2>Software</h2>
+        <p>Projects include the Acrylics of Album Covers Website and Amazon Delivery Scheduling TSP.</p>
+        <img src="assets/software_image.png" alt="Software Image" width="300">
+    </div>
+
+    <div id="tutoring" class="tab">
+        <h2>Tutoring</h2>
+        <p>For tutoring inquiries, visit my <a href="https://www.wyzant.com/match/tutor/89138192">Wyzant Profile</a>.</p>
+        <img src="assets/tutoring_image.png" alt="Tutoring Image" width="300">
+    </div>
+
+    <div id="contact" class="tab">
+        <h2>Contact</h2>
+        <p>Email: atharva.m.kalamkar@gmail.com</p>
+        <p>GitHub: <a href="https://github.com/athyk213">athyk213</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/atharva-kalamkar">Atharva Kalamkar</a></p>
+    </div>
+
+    <script>
+        function openTab(tabName) {
+            var i, tab, tablinks;
+            tab = document.getElementsByClassName("tab");
+            for (i = 0; i < tab.length; i++) {
+                tab[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+
+        // Default tab open
+        document.getElementById("home").style.display = "block";
+    </script>
+</body>
+</html>
