@@ -7,25 +7,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="main-header">
-      <div class="header-content">
-        <h1>Atharva Kalamkar</h1>
-        <p>
-          Master's Student in Computational Science, Mathematics, and
-          Engineering (May 2026)
-        </p>
-      </div>
-    </header>
-
-    <nav>
-      <ul>
-        <li><a href="index.html" class="tablink">Home</a></li>
-        <li><a href="research.html" class="tablink">Research</a></li>
-        <li><a href="software.html" class="tablink">Software</a></li>
-        <li><a href="tutoring.html" class="tablink">Tutoring</a></li>
-        <li><a href="contact.html" class="tablink">Contact</a></li>
-      </ul>
-    </nav>
+    <div data-include="header.html"></div>
+    <div data-include="nav.html"></div>
 
     <div class="content">
       <h2>Tutoring</h2>
@@ -49,21 +32,30 @@
       </a>
     </div>
 
-    <footer>
-      <div class="footer-container">
-        <div class="footer-logo">
-          <img
-            src="https://theuia.org/sites/default/files/styles/large/public/ut-logo.png?itok=PHN9t13f"
-            alt="UT Austin Logo"
-          />
-        </div>
-        <div class="footer-logo">
-          <img
-            src="https://oden.utexas.edu/static/connect/branding/orange_dol_wide%402x.png"
-            alt="Oden Institute Logo"
-          />
-        </div>
-      </div>
-    </footer>
+    <div data-include="footer.html"></div>
+
+    <script>
+      function includeHTML() {
+        const elements = document.querySelectorAll("[data-include]");
+        elements.forEach((el) => {
+          const file = el.getAttribute("data-include");
+          if (file) {
+            fetch(`components/${file}`)
+              .then((response) => {
+                if (!response.ok) throw new Error("File not found");
+                return response.text();
+              })
+              .then((data) => {
+                el.innerHTML = data;
+              })
+              .catch((error) => {
+                console.error(error);
+                el.innerHTML = "<p>Component not found.</p>";
+              });
+          }
+        });
+      }
+      window.onload = includeHTML;
+    </script>
   </body>
 </html>
