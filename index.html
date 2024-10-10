@@ -7,83 +7,76 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Atharva Kalamkar</h1>
+            <p>Pursuing Master's in Computational Science | Graduating May 2026</p>
+        </div>
+    </header>
+
     <nav>
         <ul>
             <li><a href="#home" class="tablink" onclick="openTab('home')">Home</a></li>
             <li><a href="#research" class="tablink" onclick="openTab('research')">Research</a></li>
-            <li><a href="#software" class="tablink" onclick="openTab('software')">Software</a></li>
+            <li><a href="#software" class="tablink" onclick="openTab('software')">Software Projects</a></li>
             <li><a href="#tutoring" class="tablink" onclick="openTab('tutoring')">Tutoring</a></li>
             <li><a href="#contact" class="tablink" onclick="openTab('contact')">Contact</a></li>
         </ul>
     </nav>
 
     <div id="home" class="tab">
-        <h2>Home</h2>
-        <img src="assets/profile_photo.jpg" alt="Atharva Photo" width="200" style="border-radius: 50%;">
+        <h2>Welcome</h2>
+        <img src="assets/profile_photo.jpg" alt="Atharva Photo" width="200">
         <p>
-            I am currently pursuing my Master's in Computational Science, Engineering, and Mathematics at The University of Texas at Austin. 
-            My focus areas include machine learning, high-performance computing, and software engineering.
+            I am a passionate software engineer and researcher focused on machine learning, high-performance computing, and software engineering. I am currently pursuing a Master’s degree in Computational Science, Engineering, and Mathematics at The University of Texas at Austin.
         </p>
     </div>
 
     <div id="research" class="tab">
         <h2>Research</h2>
-        
         <h3>Machine Learning Research Intern</h3>
         <p>
-            <strong>Hildebrand Department of Petroleum and Geosystems Engineering, UT Austin</strong><br>
-            Co-authored a research paper on applying machine learning techniques to evaluate hydrate formation risks in CO2 storage, improving safety and efficiency in carbon capture and storage (CCS) technologies.
-            <a href="https://doi.org/10.1016/j.fuel.2023.129670" target="_blank">Read the paper here</a>.
+            Co-authored a paper on applying machine learning techniques to evaluate hydrate formation risks in CO2 storage, improving safety in carbon capture and storage technologies.
+            <a href="https://doi.org/10.1016/j.fuel.2023.129670">Read the paper</a>.
         </p>
-        
-        <p>
-            <strong>Key Contributions:</strong>
-            <ul>
-                <li><strong>Feature Selection:</strong> Conducted in-depth data analysis to identify critical parameters affecting hydrate formation, optimizing models for higher accuracy.</li>
-                <li><strong>Predictive Modeling:</strong> Developed machine learning models using Python (pandas, NumPy, scikit-learn) to predict hydrate formation based on reservoir conditions and historical data.</li>
-                <li><strong>Risk Assessment:</strong> Integrated models into a risk assessment framework, supporting decision-making in CO2 storage projects.</li>
-                <li><strong>Machine Learning Pipelines:</strong> Leveraged tools like TensorFlow, PyTorch, and Scikit-Learn for scalable and efficient large-scale data processing.</li>
-            </ul>
-        </p>
-
         <div class="image-grid">
             <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0016236123022846-gr5.jpg" alt="Research Image 1">
             <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0016236123022846-gr7.jpg" alt="Research Image 2">
-            <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0016236123022846-gr11.jpg" alt="Research Image 3">
-            <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0016236123022846-gr13.jpg" alt="Research Image 4">
         </div>
     </div>
 
     <div id="software" class="tab">
         <h2>Software Projects</h2>
-        <p>
-            I have worked on several software development projects, with a strong focus on full-stack web development, cloud computing, and data structures. Some notable projects include:
-            <ul>
-                <li><strong>Acrylics of Album Covers Website</strong>: A full-stack website developed using React.js, HTML/CSS, AWS Amplify, DynamoDB, and GraphQL, integrating Spotify and PayPal APIs.</li>
-                <li><strong>Amazon Delivery Scheduling (TSP)</strong>: Applied algorithmic techniques and object-oriented programming in C++ to solve the Traveling Salesman Problem, with data visualization using Python.</li>
-                <li><strong>Rotation - iOS App</strong>: An iOS app developed in Swift using Spotify API and Firebase for anonymous music sharing and song discovery.</li>
-                <li><strong>MetroBike Insights API</strong>: Developed a web application that integrates datasets of MetroBike trips and kiosks to provide users with efficient data exploration. Worked extensively with containerization using Docker and Kubernetes, and developed the application backend with Flask.</li>
-            </ul>
-        </p>
-        <img src="assets/software_image.png" alt="Software Image" width="300">
+        <ul>
+            <li><strong>Acrylics of Album Covers Website</strong> (React.js, AWS Amplify)</li>
+            <li><strong>Amazon Delivery Scheduling</strong> (C++, Python, Data Visualization)</li>
+            <li><strong>Rotation - iOS App</strong> (Swift, Spotify API)</li>
+        </ul>
+        <h3>Skills</h3>
+        <p>Python, C++, Java, JavaScript, TensorFlow, Flask, Docker, Kubernetes</p>
     </div>
 
     <div id="tutoring" class="tab">
         <h2>Tutoring</h2>
         <p>
-            I am also an Engineering Tutor at the Cockrell School of Engineering at UT Austin, where I help students excel in courses like Python, C++, MATLAB, and other engineering topics.
-            I provide one-on-one tutoring sessions to help students build a solid understanding of programming, engineering computation, and mathematical methods.
+            I tutor Engineering students in Python, C++, and MATLAB at UT Austin.
         </p>
-        <p>For tutoring inquiries, visit my <a href="https://www.wyzant.com/match/tutor/89138192" target="_blank">Wyzant Profile</a>.</p>
         <img src="assets/tutoring_image.png" alt="Tutoring Image" width="300">
     </div>
 
     <div id="contact" class="tab">
         <h2>Contact</h2>
-        <p>Email: atharva.m.kalamkar@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/athyk213" target="_blank">athyk213</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/atharva-kalamkar" target="_blank">Atharva Kalamkar</a></p>
-
+        <div class="contact-links">
+            <a href="https://www.wyzant.com/match/tutor/89138192">
+                <img src="assets/wyzant-logo.png" alt="Wyzant" class="contact-logo">
+            </a>
+            <a href="https://github.com/athyk213">
+                <img src="assets/github-logo.png" alt="GitHub" class="contact-logo">
+            </a>
+            <a href="https://www.linkedin.com/in/atharva-kalamkar">
+                <img src="assets/linkedin-logo.png" alt="LinkedIn" class="contact-logo">
+            </a>
+        </div>
     </div>
 
     <script>
@@ -95,7 +88,6 @@
             }
             document.getElementById(tabName).style.display = "block";
         }
-
         document.getElementById("home").style.display = "block";
     </script>
 </body>

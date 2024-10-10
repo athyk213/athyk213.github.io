@@ -1,27 +1,46 @@
 body {
-    background-color: #121212;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: 'Helvetica', sans-serif;
     margin: 0;
+    padding: 0;
+}
+
+header.main-header {
+    background: url('assets/header-bg.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+header.main-header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header.main-header p {
+    font-size: 1.2em;
+    margin-top: 10px;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #1e1e1e;
+    background-color: #333;
 }
 
 nav ul li {
-    float: left;
+    display: inline-block;
 }
 
 nav ul li a {
-    display: block;
+    padding: 14px 20px;
+    display: inline-block;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
@@ -29,30 +48,30 @@ nav ul li a:hover {
     background-color: #575757;
 }
 
-.tabcontent {
+.tab {
     display: none;
     padding: 20px;
-    border-top: none;
 }
 
-h2 {
-    color: #ffffff;
+.contact-links {
+    display: flex;
+    gap: 20px;
 }
 
-a {
-    color: #1e90ff;
+.contact-logo {
+    width: 50px;
+    height: auto;
 }
 
 .image-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin: 20px 0;
+    gap: 20px;
 }
 
 .image-grid img {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 8px; /* Optional: to give the images rounded corners */
+    border-radius: 10px;
 }
