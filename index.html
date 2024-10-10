@@ -1,94 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atharva Kalamkar Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="main-header">
-        <div class="header-content">
-            <h1>Atharva Kalamkar</h1>
-            <p>Pursuing Master's in Computational Science | Graduating May 2026</p>
-        </div>
+      <div class="header-content">
+        <h1>Atharva Kalamkar</h1>
+        <p>
+          Master's Student in Computational Science, Mathematics, and
+          Engineering | Graduating May 2026
+        </p>
+      </div>
     </header>
 
     <nav>
-        <ul>
-            <li><a href="#home" class="tablink" onclick="openTab('home')">Home</a></li>
-            <li><a href="#research" class="tablink" onclick="openTab('research')">Research</a></li>
-            <li><a href="#software" class="tablink" onclick="openTab('software')">Software Projects</a></li>
-            <li><a href="#tutoring" class="tablink" onclick="openTab('tutoring')">Tutoring</a></li>
-            <li><a href="#contact" class="tablink" onclick="openTab('contact')">Contact</a></li>
-        </ul>
+      <ul>
+        <li>
+          <a href="#home" class="tablink" onclick="openTab('home')">Home</a>
+        </li>
+        <li>
+          <a href="#research" class="tablink" onclick="openTab('research')"
+            >Research</a
+          >
+        </li>
+        <li>
+          <a href="#software" class="tablink" onclick="openTab('software')"
+            >Software</a
+          >
+        </li>
+        <li>
+          <a href="#tutoring" class="tablink" onclick="openTab('tutoring')"
+            >Tutoring</a
+          >
+        </li>
+        <li>
+          <a href="#contact" class="tablink" onclick="openTab('contact')"
+            >Contact</a
+          >
+        </li>
+      </ul>
     </nav>
 
     <div id="home" class="tab">
-        <h2>Welcome</h2>
-        <img src="assets/profile_photo.jpg" alt="Atharva Photo" width="200">
+      <div class="content">
+        <img src="assets/profile_photo.jpg" alt="Atharva Photo" width="250" />
         <p>
-            I am a passionate software engineer and researcher focused on machine learning, high-performance computing, and software engineering. I am currently pursuing a Master’s degree in Computational Science, Engineering, and Mathematics at The University of Texas at Austin.
+          I am currently pursuing a Master's degree in Computational Science,
+          Engineering, and Mathematics at The University of Texas at Austin with
+          the Oden Institute. I am a passionate data scientist, analyst,
+          researcher, and tutor! My main focus areas are machine learning,
+          high-performance computing, and software engineering.
         </p>
+      </div>
     </div>
 
     <div id="research" class="tab">
-        <h2>Research</h2>
-        <h3>Machine Learning Research Intern</h3>
+      <h2>Research</h2>
+      <h3>Machine Learning Research Intern</h3>
+      <div class="content">
         <p>
-            Co-authored a paper on applying machine learning techniques to evaluate hydrate formation risks in CO2 storage, improving safety in carbon capture and storage technologies.
-            <a href="https://doi.org/10.1016/j.fuel.2023.129670">Read the paper</a>.
+          Co-authored a paper on applying machine learning techniques to
+          evaluate hydrate formation risks in CO2 storage, improving safety in
+          carbon capture and storage technologies.
         </p>
-        <div class="image-grid">
-            <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0016236123022846-gr5.jpg" alt="Research Image 1">
-            <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0016236123022846-gr7.jpg" alt="Research Image 2">
-        </div>
+      </div>
+      <a href="https://doi.org/10.1016/j.fuel.2023.129670">Read the paper</a>.
     </div>
 
     <div id="software" class="tab">
-        <h2>Software Projects</h2>
-        <ul>
-            <li><strong>Acrylics of Album Covers Website</strong> (React.js, AWS Amplify)</li>
-            <li><strong>Amazon Delivery Scheduling</strong> (C++, Python, Data Visualization)</li>
-            <li><strong>Rotation - iOS App</strong> (Swift, Spotify API)</li>
-        </ul>
-        <h3>Skills</h3>
-        <p>Python, C++, Java, JavaScript, TensorFlow, Flask, Docker, Kubernetes</p>
+      <h2>Software Projects</h2>
+      <ul>
+        <li>
+          <strong>Acrylics of Album Covers Website</strong> (React.js, AWS
+          Amplify)
+        </li>
+        <li>
+          <strong>Amazon Delivery Scheduling</strong> (C++, Python, Data
+          Visualization)
+        </li>
+        <li><strong>Rotation - iOS App</strong> (Swift, Spotify API)</li>
+      </ul>
+      <h3>Skills</h3>
+      <p>
+        Python, C++, Java, JavaScript, TensorFlow, Flask, Docker, Kubernetes,
+      </p>
     </div>
 
     <div id="tutoring" class="tab">
-        <h2>Tutoring</h2>
+      <h2>Tutoring</h2>
+      <div class="content">
         <p>
-            I tutor Engineering students in Python, C++, and MATLAB at UT Austin.
+          I tutor for the Cockrell School of Engineering. I cover subjects
+          including solids, statics, dynamics, numerical methods, and
+          introduction to programming (Python, C++, and MATLAB).
         </p>
-        <img src="assets/tutoring_image.png" alt="Tutoring Image" width="300">
+        <p>
+          I also have 4+ years of experience tutoring students in all
+          Mathematics subjects including Algebra 2, Geometry, Calculus 1
+          (Differential or AP Calculus AB), Calculus 2 (Integral AP Calculus
+          BC), and Calculus 3 (Vector). For more information, visit my Wyzant
+          Tutor profile below!
+        </p>
+      </div>
+      <a href="https://www.wyzant.com/match/tutor/89138192">
+        <img
+          src="https://kelseyphillippayne.com/wp-content/uploads/2019/06/wyzant-logo.png"
+          alt="Wyzant"
+          class="contact-logo"
+        />
+      </a>
     </div>
 
     <div id="contact" class="tab">
-        <h2>Contact</h2>
+      <h2>Contact</h2>
+      <div class="contact-info">
         <div class="contact-links">
-            <a href="https://www.wyzant.com/match/tutor/89138192">
-                <img src="assets/wyzant-logo.png" alt="Wyzant" class="contact-logo">
-            </a>
-            <a href="https://github.com/athyk213">
-                <img src="assets/github-logo.png" alt="GitHub" class="contact-logo">
-            </a>
-            <a href="https://www.linkedin.com/in/atharva-kalamkar">
-                <img src="assets/linkedin-logo.png" alt="LinkedIn" class="contact-logo">
-            </a>
+          <a href="https://www.wyzant.com/match/tutor/89138192">
+            <img
+              src="https://kelseyphillippayne.com/wp-content/uploads/2019/06/wyzant-logo.png"
+              alt="Wyzant"
+              class="contact-logo"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/atharva-kalamkar">
+            <img
+              src="https://i.pinimg.com/originals/b2/f8/28/b2f828513f21444829a619ce563d4d4e.png"
+              alt="LinkedIn"
+              class="contact-logo"
+            />
+          </a>
+          <a href="mailto:atharva.m.kalamkar@gmail.com">
+            <img
+              src="assets/email_image.webp"
+              alt="Email"
+              class="contact-logo email-logo"
+            />
+          </a>
         </div>
+      </div>
     </div>
 
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img
+            src="https://theuia.org/sites/default/files/styles/large/public/ut-logo.png?itok=PHN9t13f"
+            alt="UT Austin Logo"
+          />
+        </div>
+        <div class="footer-logo">
+          <img
+            src="https://oden.utexas.edu/static/connect/branding/orange_dol_wide%402x.png"
+            alt="Oden Institute Logo"
+          />
+        </div>
+      </div>
+    </footer>
+
     <script>
-        function openTab(tabName) {
-            var i, tab, tablinks;
-            tab = document.getElementsByClassName("tab");
-            for (i = 0; i < tab.length; i++) {
-                tab[i].style.display = "none";
-            }
-            document.getElementById(tabName).style.display = "block";
+      function openTab(tabName) {
+        var i, tab, tablinks;
+        tab = document.getElementsByClassName("tab");
+        for (i = 0; i < tab.length; i++) {
+          tab[i].style.display = "none";
         }
-        document.getElementById("home").style.display = "block";
+        document.getElementById(tabName).style.display = "block";
+      }
+      document.getElementById("home").style.display = "block";
     </script>
-</body>
+  </body>
 </html>
